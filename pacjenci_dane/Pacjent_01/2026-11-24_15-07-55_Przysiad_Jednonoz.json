@@ -1,0 +1,259 @@
+{
+  "pacjent": "Pacjent_01",
+  "data": "2026-11-24 15:07",
+  "cwiczenie": "Przysiad_Jednonoz",
+  "zrodlo": "Nagranie: IMG_9294.MOV",
+  "wideo_z_szkieletem": "c:\\Users\\jakub\\Desktop\\Python\\KineTrack 3D\\pacjenci_dane\\Pacjent_01\\2026-11-24_15-07-22_Przysiad_Jednonoz_SZKIELET_3D.mp4",
+  "mqi": 0.0,
+  "liczba_klatek": 642,
+  "wykryte_kompensacje": [
+    {
+      "nazwa": "Szpotawienie prawego kolana (Knee Varus R)",
+      "szczyt": 72.1,
+      "srednia": 69.2,
+      "prog": 8.0,
+      "przekroczenie": 64.1,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Szpotawienie lewego kolana (Knee Varus L)",
+      "szczyt": 52.5,
+      "srednia": 45.0,
+      "prog": 8.0,
+      "przekroczenie": 44.5,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Rotacja miednicy w płaszczyźnie poprzecznej",
+      "szczyt": 52.3,
+      "srednia": 44.9,
+      "prog": 8.0,
+      "przekroczenie": 44.3,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Wysunięcie głowy w przód (Forward Head Posture)",
+      "szczyt": 34.8,
+      "srednia": 31.5,
+      "prog": 14.0,
+      "przekroczenie": 20.8,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Pochylenie tułowia przód/tył (Trunk Flex/Ext)",
+      "szczyt": 23.1,
+      "srednia": 15.1,
+      "prog": 10.0,
+      "przekroczenie": 13.1,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Protrakcja barków (zaokrąglenie pleców)",
+      "szczyt": 23.1,
+      "srednia": 15.1,
+      "prog": 12.0,
+      "przekroczenie": 11.1,
+      "status": "KOMPENSACJA"
+    }
+  ],
+  "wszystkie_kompensacje": [
+    {
+      "nazwa": "Pochylenie boczne tułowia (Lateral Lean)",
+      "szczyt": 3.4,
+      "srednia": 2.9,
+      "prog": 6.5,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Pochylenie tułowia przód/tył (Trunk Flex/Ext)",
+      "szczyt": 23.1,
+      "srednia": 15.1,
+      "prog": 10.0,
+      "przekroczenie": 13.1,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Rotacja osiowa tułowia (Trunk Rotation)",
+      "szczyt": 4.9,
+      "srednia": 3.3,
+      "prog": 8.0,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Asymetria / uniesienie barku (Shoulder Hiking)",
+      "szczyt": 4.4,
+      "srednia": 2.0,
+      "prog": 5.5,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Protrakcja barków (zaokrąglenie pleców)",
+      "szczyt": 23.1,
+      "srednia": 15.1,
+      "prog": 12.0,
+      "przekroczenie": 11.1,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Przechylenie boczne miednicy (Pelvic Drop/Trendelenburg)",
+      "szczyt": 2.8,
+      "srednia": 2.0,
+      "prog": 5.0,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Rotacja miednicy w płaszczyźnie poprzecznej",
+      "szczyt": 52.3,
+      "srednia": 44.9,
+      "prog": 8.0,
+      "przekroczenie": 44.3,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Koślawienie lewego kolana (Knee Valgus L)",
+      "szczyt": 0.0,
+      "srednia": 0.0,
+      "prog": 7.5,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Koślawienie prawego kolana (Knee Valgus R)",
+      "szczyt": 0.0,
+      "srednia": 0.0,
+      "prog": 7.5,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Szpotawienie lewego kolana (Knee Varus L)",
+      "szczyt": 52.5,
+      "srednia": 45.0,
+      "prog": 8.0,
+      "przekroczenie": 44.5,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Szpotawienie prawego kolana (Knee Varus R)",
+      "szczyt": 72.1,
+      "srednia": 69.2,
+      "prog": 8.0,
+      "przekroczenie": 64.1,
+      "status": "KOMPENSACJA"
+    },
+    {
+      "nazwa": "Przeprost lewego kolana (Hyperextension L)",
+      "szczyt": 0.0,
+      "srednia": 0.0,
+      "prog": 4.0,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Przeprost prawego kolana (Hyperextension R)",
+      "szczyt": 0.0,
+      "srednia": 0.0,
+      "prog": 4.0,
+      "przekroczenie": 0.0,
+      "status": "NORMA"
+    },
+    {
+      "nazwa": "Wysunięcie głowy w przód (Forward Head Posture)",
+      "szczyt": 34.8,
+      "srednia": 31.5,
+      "prog": 14.0,
+      "przekroczenie": 20.8,
+      "status": "KOMPENSACJA"
+    }
+  ],
+  "stawy_rom": [
+    {
+      "staw": "Bark lewy (odwiedzenie/zgięcie)",
+      "min": 14.2,
+      "max": 78.9,
+      "rom": 64.7
+    },
+    {
+      "staw": "Bark prawy (odwiedzenie/zgięcie)",
+      "min": 19.1,
+      "max": 95.2,
+      "rom": 76.1
+    },
+    {
+      "staw": "Łokieć lewy (zgięcie/wyprost)",
+      "min": 130.1,
+      "max": 150.3,
+      "rom": 20.3
+    },
+    {
+      "staw": "Łokieć prawy (zgięcie/wyprost)",
+      "min": 132.0,
+      "max": 149.8,
+      "rom": 17.8
+    },
+    {
+      "staw": "Nadgarstek lewy (odchylenie)",
+      "min": 161.9,
+      "max": 167.1,
+      "rom": 5.2
+    },
+    {
+      "staw": "Nadgarstek prawy (odchylenie)",
+      "min": 159.3,
+      "max": 166.8,
+      "rom": 7.6
+    },
+    {
+      "staw": "Biodro lewe (zgięcie/wyprost)",
+      "min": 72.9,
+      "max": 92.8,
+      "rom": 19.9
+    },
+    {
+      "staw": "Biodro prawe (zgięcie/wyprost)",
+      "min": 83.8,
+      "max": 91.9,
+      "rom": 8.1
+    },
+    {
+      "staw": "Kolano lewe (zgięcie/wyprost)",
+      "min": 83.7,
+      "max": 101.8,
+      "rom": 18.1
+    },
+    {
+      "staw": "Kolano prawe (zgięcie/wyprost)",
+      "min": 54.0,
+      "max": 66.3,
+      "rom": 12.4
+    },
+    {
+      "staw": "Staw skokowy lewy (zgięcie grzbietowe)",
+      "min": 107.5,
+      "max": 119.4,
+      "rom": 12.0
+    },
+    {
+      "staw": "Staw skokowy prawy (zgięcie grzbietowe)",
+      "min": 125.2,
+      "max": 141.0,
+      "rom": 15.9
+    },
+    {
+      "staw": "Odcinek szyjny (pochylenie)",
+      "min": 154.9,
+      "max": 174.5,
+      "rom": 19.6
+    },
+    {
+      "staw": "Kręgosłup lędźwiowo-piersiowy (zgięcie)",
+      "min": 122.6,
+      "max": 142.5,
+      "rom": 20.0
+    }
+  ]
+}

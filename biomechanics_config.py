@@ -4,11 +4,10 @@ FOLDER_PROJEKTU = os.path.dirname(os.path.abspath(__file__))
 FOLDER_PACJENTOW = os.path.join(FOLDER_PROJEKTU, "pacjenci_dane")
 os.makedirs(FOLDER_PACJENTOW, exist_ok=True)
 
-# Używamy jednego, najdokładniejszego modelu Pose Heavy w trybie VIDEO (szybszy i dokładniejszy niż 3 modele w IMAGE)
-MODEL_NAZWA = "pose_landmarker_heavy.task"
-MODEL_URL = "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task"
+# Model FULL znacznie lepiej wykrywa pozycję siedzącą z kamery ustawionej wyżej i działa 2x szybciej
+MODEL_NAZWA = "pose_landmarker_full.task"
+MODEL_URL = "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task"
 
-# 14 precyzyjnych kątów stawowych w przestrzeni 3D (w stopniach)
 NAZWY_KATOW_3D = [
     "Bark lewy (odwiedzenie/zgięcie)",
     "Bark prawy (odwiedzenie/zgięcie)",
@@ -26,7 +25,6 @@ NAZWY_KATOW_3D = [
     "Kręgosłup lędźwiowo-piersiowy (zgięcie)"
 ]
 
-# 14 wektorowych kompensacji ruchowych w 3D wraz z progami fizjologicznymi (stopnie)
 KOMPENSACJE_DEFINICJE = [
     {"nazwa": "Pochylenie boczne tułowia (Lateral Lean)", "prog": 6.5, "jednostka": "°"},
     {"nazwa": "Pochylenie tułowia przód/tył (Trunk Flex/Ext)", "prog": 10.0, "jednostka": "°"},
