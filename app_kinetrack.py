@@ -1,3 +1,4 @@
+import os
 import time
 import math
 import threading
@@ -386,7 +387,8 @@ class KineTrackApp:
 
         cap.release()
         self.tryb = "STOP"
-        self.root.after(0, lambda: self._podsumuj_i_zapisz(f"Plik: {sciezka.split('/')[-1]}"))
+        nazwa_pliku = os.path.basename(sciezka)
+        self.root.after(0, lambda: self._podsumuj_i_zapisz(f"Plik: {nazwa_pliku}"))
 
     def _odswiez_ui_mp4(self, rgb, katy, komp, nr, total, fps):
         self.lbl_fps.config(text=f"Analiza MP4: klatka {nr}/{total} ({fps:.1f} FPS)")
@@ -405,33 +407,23 @@ class KineTrackApp:
         cwiczenie = self.entry_cwiczenie.get().strip() or "Test_Ruchowy"
         tracker.zapisz_wynik_pacjenta(id_pacjenta, cwiczenie, zrodlo, wynik)
 
-        komp_lista = "
-".join(
+        komp_lista = "\n".join(
             [f"• {k['nazwa']}: {k['szczyt']}° (norma ≤ {k['prog']}°, +{k['przekroczenie']}°)"
              for k in wynik["wykryte_kompensacje"]]
         ) or "• Brak istotnych kompensacji — ruch czysty biomechanicznie!"
 
-        rom_lista = "
-".join(
+        rom_lista = "\n".join(
             [f"• {s['staw']}: {s['min']}° – {s['max']}° (zakres ROM: {s['rom']}°)"
              for s in wynik["stawy_rom"][:8]]
         )
 
         messagebox.showinfo(
             f"Raport Biomechaniczny 3D — {id_pacjenta}",
-            f"Ćwiczenie: {cwiczenie}
-"
-            f"Indeks Jakości Ruchu (MQI): {wynik['mqi']} / 100%
-"
-            f"Przeanalizowane klatki: {wynik['liczba_klatek']}
-
-"
-            f"WYKRYTE KOMPENSACJE (90. percentyl):
-{komp_lista}
-
-"
-            f"ZAKRESY RUCHU STAWÓW (wybrane ROM 3D):
-{rom_lista}"
+            f"Ćwiczenie: {cwiczenie}\n"
+            f"Indeks Jakości Ruchu (MQI): {wynik['mqi']} / 100%\n"
+            f"Przeanalizowane klatki: {wynik['liczba_klatek']}\n\n"
+            f"WYKRYTE KOMPENSACJE (90. percentyl):\n{komp_lista}\n\n"
+            f"ZAKRESY RUCHU STAWÓW (wybrane ROM 3D):\n{rom_lista}"
         )
 
     def pokaz_wykres_postepow(self):
@@ -441,8 +433,7 @@ class KineTrackApp:
             messagebox.showinfo("Brak historii", f"Brak zapisanych badań dla pacjenta '{id_pacjenta}'.")
             return
 
-        daty = [f"{h['data']}
-({h['cwiczenie']})" for h in historia]
+        daty = [f"{h['data']}\n({h['cwiczenie']})" for h in historia]
         mqi = [h["mqi"] for h in historia]
         liczba_komp = [len(h["wykryte_kompensacje"]) for h in historia]
 

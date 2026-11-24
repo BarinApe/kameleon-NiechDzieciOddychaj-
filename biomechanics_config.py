@@ -26,7 +26,7 @@ NAZWY_KATOW_3D = [
     "Kręgosłup lędźwiowo-piersiowy (zgięcie)"
 ]
 
-# 14 wektorowych kompensacji ruchowych w 3D wraz z progami fizjologicznymi (stopnie / cm)
+# 14 wektorowych kompensacji ruchowych w 3D wraz z progami fizjologicznymi (stopnie)
 KOMPENSACJE_DEFINICJE = [
     {"nazwa": "Pochylenie boczne tułowia (Lateral Lean)", "prog": 6.5, "jednostka": "°"},
     {"nazwa": "Pochylenie tułowia przód/tył (Trunk Flex/Ext)", "prog": 10.0, "jednostka": "°"},

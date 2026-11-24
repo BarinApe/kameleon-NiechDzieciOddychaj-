@@ -6,7 +6,7 @@ import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 
-from biomechanics_config import FOLDER_PROJEKTU, MODEL_NAZWA, MODEL_URL, KOMPENSACJE_DEFINICJE
+from biomechanics_config import FOLDER_PROJEKTU, MODEL_NAZWA, MODEL_URL
 
 
 class OneEuroFilter3D:
